@@ -1,0 +1,25 @@
+@font-face{
+    font-family: '이쁜폰트';
+    src: url(NanumSquareAcB.woff);
+}
+.flex-container{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px; 
+    text-align: center;
+    background-color:palevioletred;
+    font-size: 20PX;
+    color: white;
+}
+
+.flex-item{
+   width:80px;
+
+   
+}
+@media screen and (max-width 1200px){
+    .main-title{
+        font-size: 30px;
+    }    
+}

@@ -1,0 +1,38 @@
+$main-color : #2a4cb2;
+$basic:16px;
+$color:red;
+
+
+.dd{
+    width: 100px;
+    height: 100px;
+    background-color: $main-color;
+    font-size: $basic;
+    color:$color;
+  }
+
+%btn{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
+.green{
+    @extend %btn;
+    background-color: green;
+}
+
+.red{
+    @extend %btn;
+    background-color: red;
+}
+
+.blue{
+    @include btn(30px);
+    background-color: blue;
+}
+  
+@mixin btn($구멍){
+    width: $구멍;
+    height: 200px;
+    padding: 20px;
+}

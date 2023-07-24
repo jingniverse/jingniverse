@@ -1,0 +1,121 @@
+.main{
+    width: 500px;
+    height: 500px;
+    background: black;
+    clear:left;
+    float: left;
+    margin-top: 10px;
+}
+.side{
+    width: 15%;
+    height: 100%;
+    background-color:blue;
+    transition: 2s;
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+    padding-right: 5px;
+    color: white;  
+}
+
+.side:hover{
+    width: 40%;
+    text-align: center;
+
+}
+.side-2{
+    margin-right: 5px;
+    color: white;
+    display: none;
+}
+.side:hover p{
+    animation-name:item;
+    animation-duration: 2s;
+    display: block;
+} 
+@keyframes item {
+    0%{ 
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+    
+    100%{
+        transform: translateX()
+    }
+    }
+
+
+
+
+
+.ani-text{
+    text-align: center;
+    display: inline;
+    width: 100px;
+    height: 75px;
+    background-color: skyblue;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    line-height: 70px;
+}
+.ani-text:hover{
+    animation-name: shake; 
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    0%{ 
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: rotate(-10deg)
+    }
+    
+    100%{
+        transform: rotate()
+    }
+    }
+
+.skew{
+    text-align: center;
+    display: inline;
+    width: 100px;
+    height: 75px;
+    background-color: white;
+    float: left;
+    clear:left;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    line-height: 70px;
+    font-size: 100px;
+    cursor: pointer;
+}
+.skew:hover{
+    animation-name: skewer; 
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes skewer {
+    0%{ 
+       transform:rotate(0deg)
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    
+    100%{
+        transform: rotate(45deg) scale(1.5)
+    }
+    }   

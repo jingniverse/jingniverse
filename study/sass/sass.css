@@ -1,0 +1,29 @@
+.dd {
+  width: 100px;
+  height: 100px;
+  background-color: #2a4cb2;
+  font-size: 16px;
+  color: red;
+}
+
+.red, .green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  width: 30px;
+  height: 200px;
+  padding: 20px;
+  background-color: blue;
+}/*# sourceMappingURL=sass.css.map */
+
